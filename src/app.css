@@ -1,0 +1,29 @@
+:root{
+
+    --paragraph-primary: 107, 114, 128;
+
+    --primary-light: 98, 156, 248;
+    --primary: 59, 130, 246;
+    --primary-dark: 37, 99, 235;
+    --secondary-light: 143, 150, 164;
+    --secondary: 107, 114, 128;
+    --secondary-dark: 75, 85, 99;
+    --success-light: 34, 197, 94;
+    --success: 34, 197, 94;
+    --success-dark: 22, 163, 74;
+    --warning-light: 234, 179, 8;
+    --warning: 234, 179, 8;
+    --warning-dark: 202, 138, 4;
+    --danger-light: 239, 68, 68;
+    --danger: 239, 68, 68;
+    --danger-dark: 220, 38, 38;
+    --info-light: 103, 232, 249;
+    --info: 103, 232, 249;
+    --info-dark: 34, 211, 238;
+    --white-light: 242, 242, 242;
+    --white: 255, 255, 255;
+    --white-dark: 100, 116, 139;
+    --black-light: 35, 40, 47;
+    --black: 26, 29, 35;
+    --black-dark: 0, 0, 0;
+}
