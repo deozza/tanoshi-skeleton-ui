@@ -1,12 +1,11 @@
 <script lang="ts">
-    import '$lib/styles/reset.css';
-    import '$lib/styles/text.css';
+    import '../styles/reset.css';
+    import '../styles/text.css';
 
 	import type { TanoshiLabelModel } from "tanoshi-models";
 
 	export let tanoshiLabelModel: TanoshiLabelModel;
 </script>
-
 
 {#if tanoshiLabelModel.isVisibile}
     <label 

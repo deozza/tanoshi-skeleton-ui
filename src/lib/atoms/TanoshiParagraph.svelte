@@ -1,6 +1,6 @@
 <script lang="ts">
-    import '$lib/styles/reset.css';
-    import '$lib/styles/text.css';
+    import '../styles/reset.css';
+    import '../styles/text.css';
 
     import type { TanoshiParagraphModel } from 'tanoshi-models'
 
@@ -15,12 +15,11 @@
         text-{tanoshiParagraphModel.textAlignment} 
         {tanoshiParagraphModel.textTransform}
         {tanoshiParagraphModel.textDecoration}
-        {$$props.class}
         {tanoshiParagraphModel.textTheme}
+        {$$props.class}
     "
     style="{$$props.style};"
 >
-{tanoshiParagraphModel.textTheme}
     <slot/>
 </p>
 

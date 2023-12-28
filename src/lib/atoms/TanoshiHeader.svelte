@@ -1,12 +1,11 @@
 <script lang="ts">
-	import '$lib/styles/reset.css';
-    import '$lib/styles/text.css';
+	import '../styles/reset.css';
+    import '../styles/text.css';
 
 	import type { TanoshiHeaderModel } from "tanoshi-models";
 
     export let tanoshiHeaderModel: TanoshiHeaderModel;
 </script>
-
 
 {#if tanoshiHeaderModel.tag === 'h1'}
 	<h1

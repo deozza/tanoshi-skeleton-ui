@@ -1,6 +1,7 @@
 <script lang="ts">
-    import { TanoshiIconModel } from 'tanoshi-models'
 	import 'iconify-icon';
+
+    import { TanoshiIconModel } from 'tanoshi-models'
 
     export let tanoshiIconModel: TanoshiIconModel;
 

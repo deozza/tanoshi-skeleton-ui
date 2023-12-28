@@ -1,5 +1,6 @@
 <script lang="ts">
-    import '$lib/styles/reset.css';
+
+    import '../styles/reset.css';
 
 	import type { TanoshiButtonModel } from "tanoshi-models";
 
