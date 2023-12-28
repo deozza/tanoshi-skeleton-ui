@@ -10,11 +10,13 @@
 {#if tanoshiLabelModel.isVisibile}
     <label 
         class="
-            text-{tanoshiLabelModel.fontSize} 
-            {tanoshiLabelModel.fontWeight} 
-            text-{tanoshiLabelModel.textAlignment} 
-            {tanoshiLabelModel.textTransform}
-            {tanoshiLabelModel.textDecoration}
+            tanoshi-label
+            font-size-{tanoshiLabelModel.fontSize} 
+            font-weight{tanoshiLabelModel.fontWeight} 
+            text-alignment-{tanoshiLabelModel.textAlignment} 
+            text-transform-{tanoshiLabelModel.textTransform}
+            text-decoration-{tanoshiLabelModel.textDecoration}
+            text-{tanoshiLabelModel.textTheme}
             {$$props.class}
         "
         style="{$$props.style};"
@@ -25,67 +27,35 @@
 {/if}
 
 <style>
-    label.black {
-        color: rgba(var(--black));
-    }
-
-    label.label-black {
+   label.tanoshi-label.text-label-black {
         color: rgba(var(--label-black));
     }
 
-    label.white {
-        color: rgba(var(--white));
-    }
-
-    label.label-white {
+    label.tanoshi-label.text-label-white {
         color: rgba(var(--label-white));
     }
 
-    label.primary {
-        color: rgba(var(--primary));
-    }
-
-    label.label-primary {
+    label.tanoshi-label.text-label-primary {
         color: rgba(var(--label-primary));
     }
 
-    label.secondary {
-        color: rgba(var(--secondary));
-    }
-
-    label.label-secondary {
+    label.tanoshi-label.text-label-secondary {
         color: rgba(var(--label-secondary));
     }
 
-    label.success {
-        color: rgba(var(--success));
-    }
-
-    label.label-success {
+    label.tanoshi-label.text-label-success {
         color: rgba(var(--label-success));
     }
 
-    label.danger {
-        color: rgba(var(--danger));
-    }
-
-    label.label-danger {
+    label.tanoshi-label.text-label-danger {
         color: rgba(var(--label-danger));
     }
 
-    label.warning {
-        color: rgba(var(--warning));
-    }
-
-    label.label-warning {
+    label.tanoshi-label.text-label-warning {
         color: rgba(var(--label-warning));
     }
 
-    label.info {
-        color: rgba(var(--info));
-    }
-
-    label.label-info {
+    label.tanoshi-label.text-label-info {
         color: rgba(var(--label-info));
     }
 </style>

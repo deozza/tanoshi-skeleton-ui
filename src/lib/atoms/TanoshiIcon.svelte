@@ -11,7 +11,7 @@
     icon="{tanoshiIconModel.content}" 
     height="{tanoshiIconModel.height}px"
     width="{tanoshiIconModel.width}px"
-    class="{tanoshiIconModel.theme}"
+    class="tanoshi-icon {tanoshiIconModel.theme}"
     style="{$$props.style}"
 />
 

@@ -1,0 +1,71 @@
+.background-transparent{
+    background-color: transparent;
+}
+
+.border-transparent{
+    border-color: transparent;
+}
+
+.background-black{
+    background-color: rgba(var(--black));
+}
+
+.border-black{
+    border-color: rgba(var(--black));
+}
+
+.background-white{
+    background-color: rgba(var(--white));
+}
+
+.border-white{
+    border-color: rgba(var(--white));
+}
+
+.background-primary{
+    background-color: rgba(var(--primary));
+}
+
+.border-primary{
+    border-color: rgba(var(--primary));
+}
+
+.background-secondary{
+    background-color: rgba(var(--secondary));
+}
+
+.border-secondary{
+    border-color: rgba(var(--secondary));
+}
+
+.background-success{
+    background-color: rgba(var(--success));
+}
+
+.border-success{
+    border-color: rgba(var(--success));
+}
+
+.background-danger{
+    background-color: rgba(var(--danger));
+}
+
+.border-danger{
+    border-color: rgba(var(--danger));
+}
+
+.background-warning{
+    background-color: rgba(var(--warning));
+}
+
+.border-warning{
+    border-color: rgba(var(--warning));
+}
+
+.background-info{
+    background-color: rgba(var(--info));
+}
+
+.border-info{
+    border-color: rgba(var(--info));
+}

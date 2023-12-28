@@ -1,23 +1,19 @@
 <script lang="ts">
-    import { FONT_SIZES, FONT_WEIGHTS, PARAGRAPH_THEMES, THEMES, TanoshiButtonModel, TanoshiIconModel, TanoshiParagraphModel } from 'tanoshi-models'
-	import TanoshiParagraph from "$lib/atoms/TanoshiParagraph.svelte";
+    import { DIRECTIONS, JUSTIFY_CONTENTS, THEMES, TanoshiButtonModel, TanoshiContainerModel } from 'tanoshi-models'
     import '../app.css'
 	import TanoshiButton from '$lib/atoms/TanoshiButton.svelte';
-	import TanoshiIcon from '$lib/atoms/TanoshiIcon.svelte';
-
+	import TanoshiContainer from '$lib/molecules/TanoshiContainer.svelte';
 
     const tanoshiButtonModel: TanoshiButtonModel = new TanoshiButtonModel()
-    tanoshiButtonModel.backgroundTheme = THEMES.Primary;
-    tanoshiButtonModel.textTheme = THEMES.White;
-    tanoshiButtonModel.borderTheme = THEMES.Primary;
-    tanoshiButtonModel.hoverBackgroundTheme = THEMES.Primary;
-    tanoshiButtonModel.hoverTextTheme = THEMES.White;
-    tanoshiButtonModel.hoverBorderTheme = THEMES.Primary;
+    .setBackgroundTheme(THEMES.Black).setIsDisabled(true)
 
-    const tanoshiIconModel: TanoshiIconModel = new TanoshiIconModel('mdi:user');
-    tanoshiIconModel.theme = THEMES.Danger;
-    tanoshiIconModel.width = 48;
-    tanoshiIconModel.height = 48;
+    const tanoshiRowContainerModel: TanoshiContainerModel = new TanoshiContainerModel(DIRECTIONS.Row, DIRECTIONS.Column)
+    .setJustifyContent(JUSTIFY_CONTENTS.Between)
+    .setBackgroundTheme(THEMES.Primary)
+
+    const tanoshiColContainerModel: TanoshiContainerModel = new TanoshiContainerModel(DIRECTIONS.Column, DIRECTIONS.Column)
+    .setJustifyContent(JUSTIFY_CONTENTS.Between)
+    .setBackgroundTheme(THEMES.Secondary)
 
 </script>
 
@@ -26,7 +22,47 @@
 <p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
-    <TanoshiIcon tanoshiIconModel={tanoshiIconModel} />
-    coucou
-</TanoshiButton>
+<TanoshiContainer tanoshiContainerModel={tanoshiRowContainerModel}>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+
+</TanoshiContainer>
+
+<TanoshiContainer tanoshiContainerModel={tanoshiColContainerModel} class={'h-full'}>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+    <TanoshiButton {tanoshiButtonModel} on:click={()=>console.log('coucou')}>
+        coucou
+    </TanoshiButton>
+
+</TanoshiContainer>
+
+<div class="background-primary">
+coucou
+</div>
+
+<style>
+    :global(.h-full){
+        height: 300px;
+    }
+
+    :global(div.tanoshi-container.background-primary){
+        padding: 0.5rem 1rem/* 8px */;
+        box-shadow: inset 8px 8px 15px rgba(var(--primary-dark-bg-container, var(--primary-dark))), inset -8px -8px 15px rgba(var(--primary-light-bg-container, var(--primary-light)));
+    }
+
+    :global(div.background-secondary){
+        background-color: rgba(var(--secondary));
+    }
+</style>
