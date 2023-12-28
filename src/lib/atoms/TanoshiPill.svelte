@@ -1,9 +1,8 @@
 <script lang="ts">
+	import '../styles/reset.css';
+	import '../styles/container.css';
 
-	import '../styles/reset.css'
-    import '../styles/container.css'
-
-	import type { TanoshiPillModel } from "tanoshi-models";
+	import type { TanoshiPillModel } from 'tanoshi-models';
 
 	export let tanoshiPillModel: TanoshiPillModel;
 </script>
@@ -21,9 +20,8 @@
 </span>
 
 <style>
-
 	span.tanoshi-pill {
-        border-style: solid;
+		border-style: solid;
 		border-width: 1px;
 		display: flex;
 		align-items: center;

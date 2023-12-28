@@ -1,17 +1,16 @@
 <script lang="ts">
+	import '../styles/reset.css';
+	import '../styles/container.css';
+	import '../styles/text.css';
 
-	import '../styles/reset.css'
-    import '../styles/container.css'
-	import '../styles/text.css'
-
-	import type { TanoshiButtonModel } from "tanoshi-models";
+	import type { TanoshiButtonModel } from 'tanoshi-models';
 
 	export let tanoshiButtonModel: TanoshiButtonModel;
 </script>
 
 <button
 	type={tanoshiButtonModel.type}
-	aria-label="{tanoshiButtonModel.label}"
+	aria-label={tanoshiButtonModel.label}
 	disabled={tanoshiButtonModel.isDisabled}
 	on:click
 	class=" 
@@ -29,25 +28,24 @@
 </button>
 
 <style>
-
 	button.tanoshi-button {
 		border-style: solid;
 		border-width: 1px;
 		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 150ms;
-		transition-duration: 300ms;	
+		transition-duration: 300ms;
 		cursor: pointer;
 		display: flex;
 		align-items: center;
 	}
 
-    button.tanoshi-button:disabled {
-        opacity: 0.8;
-        cursor: not-allowed;
-    }
+	button.tanoshi-button:disabled {
+		opacity: 0.8;
+		cursor: not-allowed;
+	}
 
-	button.tanoshi-button:hover:not([disabled]){
+	button.tanoshi-button:hover:not([disabled]) {
 		cursor: pointer;
 	}
 
@@ -242,5 +240,4 @@
 	button.tanoshi-button.hover-border-button-hover-border-info:hover:not([disabled]) {
 		border-color: rgba(var(--button-hover-border-info));
 	}
-
 </style>
