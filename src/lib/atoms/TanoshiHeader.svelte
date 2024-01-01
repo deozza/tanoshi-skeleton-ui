@@ -9,96 +9,42 @@
 
 {#if tanoshiHeaderModel.tag === 'h1'}
 	<h1
-		class="
-			tanoshi-header
-			font-size-{tanoshiHeaderModel.fontSize} 
-			font-weight-{tanoshiHeaderModel.fontWeight} 
-			text-alignment-{tanoshiHeaderModel.textAlignment} 
-			text-transform-{tanoshiHeaderModel.textTransform}
-			text-decoration{tanoshiHeaderModel.textDecoration}
-			text-{tanoshiHeaderModel.textTheme}
-			{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />
 	</h1>
 {:else if tanoshiHeaderModel.tag === 'h2'}
 	<h2
-		class="
-			tanoshi-header
-			font-size-{tanoshiHeaderModel.fontSize} 
-			font-weight-{tanoshiHeaderModel.fontWeight} 
-			text-alignment-{tanoshiHeaderModel.textAlignment} 
-			text-transform-{tanoshiHeaderModel.textTransform}
-			text-decoration{tanoshiHeaderModel.textDecoration}
-			text-{tanoshiHeaderModel.textTheme}
-			{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />
 	</h2>
 {:else if tanoshiHeaderModel.tag === 'h3'}
 	<h3
-		class="
-			tanoshi-header
-			font-size-{tanoshiHeaderModel.fontSize} 
-			font-weight-{tanoshiHeaderModel.fontWeight} 
-			text-alignment-{tanoshiHeaderModel.textAlignment} 
-			text-transform-{tanoshiHeaderModel.textTransform}
-			text-decoration{tanoshiHeaderModel.textDecoration}
-			text-{tanoshiHeaderModel.textTheme}
-			{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />
 	</h3>
 {:else if tanoshiHeaderModel.tag === 'h4'}
 	<h4
-		class="
-			tanoshi-header
-			font-size-{tanoshiHeaderModel.fontSize} 
-			font-weight-{tanoshiHeaderModel.fontWeight} 
-			text-alignment-{tanoshiHeaderModel.textAlignment} 
-			text-transform-{tanoshiHeaderModel.textTransform}
-			text-decoration{tanoshiHeaderModel.textDecoration}
-			text-{tanoshiHeaderModel.textTheme}
-			{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />
 	</h4>
 {:else if tanoshiHeaderModel.tag === 'h5'}
 	<h5
-		class="
-			tanoshi-header
-			font-size-{tanoshiHeaderModel.fontSize} 
-			font-weight-{tanoshiHeaderModel.fontWeight} 
-			text-alignment-{tanoshiHeaderModel.textAlignment} 
-			text-transform-{tanoshiHeaderModel.textTransform}
-			text-decoration{tanoshiHeaderModel.textDecoration}
-			text-{tanoshiHeaderModel.textTheme}
-			{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />
 	</h5>
 {:else}
 	<h6
-		class="
-		tanoshi-header
-		font-size-{tanoshiHeaderModel.fontSize} 
-		font-weight-{tanoshiHeaderModel.fontWeight} 
-		text-alignment-{tanoshiHeaderModel.textAlignment} 
-		text-transform-{tanoshiHeaderModel.textTransform}
-		text-decoration{tanoshiHeaderModel.textDecoration}
-		text-{tanoshiHeaderModel.textTheme}
-		{$$props.class}
-		"
+		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 	>
 		<slot />

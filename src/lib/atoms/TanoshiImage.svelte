@@ -4,23 +4,6 @@
 	import type { TanoshiImageModel } from 'tanoshi-models';
 
 	export let tanoshiImageModel: TanoshiImageModel;
-
-	const desktopWidth: string =
-		tanoshiImageModel.desktopWidth !== null
-			? tanoshiImageModel.desktopWidth
-			: tanoshiImageModel.width + 'px';
-	const desktopHeight: string =
-		tanoshiImageModel.desktopHeight !== null
-			? tanoshiImageModel.desktopHeight
-			: tanoshiImageModel.height + 'px';
-	const mobileWidth: string =
-		tanoshiImageModel.mobileWidth !== null
-			? tanoshiImageModel.mobileWidth
-			: tanoshiImageModel.width + 'px';
-	const mobileHeight: string =
-		tanoshiImageModel.mobileHeight !== null
-			? tanoshiImageModel.mobileHeight
-			: tanoshiImageModel.height + 'px';
 </script>
 
 <img
@@ -29,8 +12,8 @@
 	width={tanoshiImageModel.width}
 	height={tanoshiImageModel.height}
 	loading={tanoshiImageModel.loadingMethod}
-	class="tanoshi-image cursor-{tanoshiImageModel.cursor} {$$props.class}"
-	style="--desktop-width:{desktopWidth}; --desktop-height:{desktopHeight}; --mobile-width:{mobileWidth}; --mobile-height:{mobileHeight} ; {$$props.style}"
+	class="{tanoshiImageModel.getClasses()} {$$props.class}"
+	style="--desktop-width:{tanoshiImageModel.desktopWidth}; --desktop-height:{tanoshiImageModel.desktopHeight}; --mobile-width:{tanoshiImageModel.mobileWidth}; --mobile-height:{tanoshiImageModel.mobileHeight} ; {$$props.style}"
 />
 
 <style>

@@ -13,15 +13,7 @@
 	aria-label={tanoshiButtonModel.label}
 	disabled={tanoshiButtonModel.isDisabled}
 	on:click
-	class=" 
-		tanoshi-button
-		background-{tanoshiButtonModel.backgroundTheme}
-		text-{tanoshiButtonModel.textTheme}
-		border-{tanoshiButtonModel.borderTheme}
-		hover-background{tanoshiButtonModel.hoverBackgroundTheme}
-		hover-text-{tanoshiButtonModel.hoverTextTheme}
-		hover-border-{tanoshiButtonModel.hoverBorderTheme}
-	"
+	class="{tanoshiButtonModel.getClasses()} {$$props.class}}"
 	style="{$$props.style};"
 >
 	<slot />

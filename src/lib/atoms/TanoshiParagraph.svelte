@@ -8,16 +8,7 @@
 </script>
 
 <p
-	class="
-        tanoshi-paragraph
-        font-size-{tanoshiParagraphModel.fontSize} 
-        font-weigth-{tanoshiParagraphModel.fontWeight} 
-        text-alignment-{tanoshiParagraphModel.textAlignment} 
-        text-transform-{tanoshiParagraphModel.textTransform}
-        text-decoration-{tanoshiParagraphModel.textDecoration}
-        text-{tanoshiParagraphModel.textTheme}
-        {$$props.class}
-    "
+	class=" {tanoshiParagraphModel.getClasses()} {$$props.class}"
 	style="{$$props.style};"
 >
 	<slot />

@@ -8,12 +8,7 @@
 </script>
 
 <span
-	class=" 
-		tanoshi-pill
-		background-{tanoshiPillModel.backgroundTheme}
-		text-{tanoshiPillModel.textTheme}
-		border-{tanoshiPillModel.borderTheme}
-	"
+	class="{tanoshiPillModel.getClasses()} {$$props.class}"
 	style="{$$props.style};"
 >
 	<slot />

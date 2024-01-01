@@ -11,16 +11,7 @@
 	href={tanoshiLinkModel.href}
 	aria-label={tanoshiLinkModel.label}
 	target={tanoshiLinkModel.target}
-	class="
-        tanoshi-link
-        font-size-{tanoshiLinkModel.fontSize} 
-        font-weight-{tanoshiLinkModel.fontWeight} 
-        text-alignment-{tanoshiLinkModel.textAlignment} 
-        text-transform-{tanoshiLinkModel.textTransform}
-        text-decoration-{tanoshiLinkModel.textDecoration}
-        text-{tanoshiLinkModel.textTheme}
-        hover-text-{tanoshiLinkModel.hoverTextTheme}
-        {$$props.class}
+	class="{tanoshiLinkModel.getClasses()} {$$props.class}
     "
 	class:disabled={tanoshiLinkModel.isDisabled}
 	style="{$$props.style};"

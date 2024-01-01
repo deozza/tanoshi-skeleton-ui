@@ -8,18 +8,7 @@
 </script>
 
 <div
-	class="
-        tanoshi-container
-        desktop-{tanoshiContainerModel.desktopDirection}
-        mobile-{tanoshiContainerModel.mobileDirection}
-        background-{tanoshiContainerModel.backgroundTheme}
-        border-{tanoshiContainerModel.borderTheme}
-        justifyContent-{tanoshiContainerModel.justifyContent}
-        alignItems-{tanoshiContainerModel.alignItems}
-        alignContent-{tanoshiContainerModel.alignContent}
-        {tanoshiContainerModel.wrap}
-		{$$props.class}
-	"
+	class="{tanoshiContainerModel.getClasses()} {$$props.class}"
 	style="{$$props.style};"
 >
 	<slot />

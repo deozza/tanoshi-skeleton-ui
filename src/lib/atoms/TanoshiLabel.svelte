@@ -7,18 +7,9 @@
 	export let tanoshiLabelModel: TanoshiLabelModel;
 </script>
 
-{#if tanoshiLabelModel.isVisibile}
+{#if tanoshiLabelModel.isVisible}
 	<label
-		class="
-            tanoshi-label
-            font-size-{tanoshiLabelModel.fontSize} 
-            font-weight{tanoshiLabelModel.fontWeight} 
-            text-alignment-{tanoshiLabelModel.textAlignment} 
-            text-transform-{tanoshiLabelModel.textTransform}
-            text-decoration-{tanoshiLabelModel.textDecoration}
-            text-{tanoshiLabelModel.textTheme}
-            {$$props.class}
-        "
+		class="{tanoshiLabelModel.getClasses()} {$$props.class}"
 		style="{$$props.style};"
 		for={tanoshiLabelModel.forAttr}
 	>
