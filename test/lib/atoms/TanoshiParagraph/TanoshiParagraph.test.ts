@@ -3,7 +3,7 @@ import { render } from '@testing-library/svelte';
 import { expect, test } from 'vitest'
 
 import TanoshiParagraph from '../../../../src/lib/atoms/TanoshiParagraph.svelte';
-import { PARAGRAPH_THEMES, THEMES, TanoshiParagraphModel } from 'tanoshi-models';
+import { PARAGRAPH_TEXT_THEMES, THEMES, TanoshiParagraphModel } from 'tanoshi-models';
 import { describe } from 'node:test';
 
 
@@ -47,14 +47,14 @@ describe('TanoshiParagraph themes', () => {
     });
 
 	const testCases_customTheme = [
-        { theme: PARAGRAPH_THEMES.Black, expectedClass: 'text-paragraph-black' },
-        { theme: PARAGRAPH_THEMES.White, expectedClass: 'text-paragraph-white' },
-        { theme: PARAGRAPH_THEMES.Primary, expectedClass: 'text-paragraph-primary' },
-        { theme: PARAGRAPH_THEMES.Secondary, expectedClass: 'text-paragraph-secondary' },
-        { theme: PARAGRAPH_THEMES.Success, expectedClass: 'text-paragraph-success' },
-        { theme: PARAGRAPH_THEMES.Warning, expectedClass: 'text-paragraph-warning' },
-        { theme: PARAGRAPH_THEMES.Danger, expectedClass: 'text-paragraph-danger' },
-        { theme: PARAGRAPH_THEMES.Info, expectedClass: 'text-paragraph-info' },
+        { theme: PARAGRAPH_TEXT_THEMES.Black, expectedClass: 'text-theme-paragraph-text-black' },
+        { theme: PARAGRAPH_TEXT_THEMES.White, expectedClass: 'text-theme-paragraph-text-white' },
+        { theme: PARAGRAPH_TEXT_THEMES.Primary, expectedClass: 'text-theme-paragraph-text-primary' },
+        { theme: PARAGRAPH_TEXT_THEMES.Secondary, expectedClass: 'text-theme-paragraph-text-secondary' },
+        { theme: PARAGRAPH_TEXT_THEMES.Success, expectedClass: 'text-theme-paragraph-text-success' },
+        { theme: PARAGRAPH_TEXT_THEMES.Warning, expectedClass: 'text-theme-paragraph-text-warning' },
+        { theme: PARAGRAPH_TEXT_THEMES.Danger, expectedClass: 'text-theme-paragraph-text-danger' },
+        { theme: PARAGRAPH_TEXT_THEMES.Info, expectedClass: 'text-theme-paragraph-text-info' },
     ];
 
     testCases_customTheme.forEach(({ theme, expectedClass }) => {

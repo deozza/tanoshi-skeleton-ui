@@ -91,19 +91,19 @@
 	text-decoration: none;
 }
 
-.text-alignment-left {
+.text-align-left {
 	text-align: left;
 }
 
-.text-alignment-center {
+.text-align-center {
 	text-align: center;
 }
 
-.text-alignment-right {
+.text-align-right {
 	text-align: right;
 }
 
-.text-alignment-justify {
+.text-align-justify {
 	text-align: justify;
 }
 

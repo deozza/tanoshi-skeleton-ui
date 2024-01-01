@@ -6,5 +6,8 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    include: ['test/**/*.{test,spec}.ts'],
+    // Extend jest-dom matchers
+    setupFiles: ['./test/setup.ts']
   },
 })
