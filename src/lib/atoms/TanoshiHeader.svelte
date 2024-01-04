@@ -8,45 +8,27 @@
 </script>
 
 {#if tanoshiHeaderModel.tag === 'h1'}
-	<h1
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h1 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h1>
 {:else if tanoshiHeaderModel.tag === 'h2'}
-	<h2
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h2 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h2>
 {:else if tanoshiHeaderModel.tag === 'h3'}
-	<h3
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h3 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h3>
 {:else if tanoshiHeaderModel.tag === 'h4'}
-	<h4
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h4 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h4>
 {:else if tanoshiHeaderModel.tag === 'h5'}
-	<h5
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h5 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h5>
 {:else}
-	<h6
-		class="{tanoshiHeaderModel.getClasses()} {$$props.class}"
-		style="{$$props.style};"
-	>
+	<h6 class="{tanoshiHeaderModel.getClasses()} {$$props.class}" style="{$$props.style};">
 		<slot />
 	</h6>
 {/if}

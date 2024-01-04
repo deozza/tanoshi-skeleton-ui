@@ -7,10 +7,7 @@
 	export let tanoshiParagraphModel: TanoshiParagraphModel;
 </script>
 
-<p
-	class=" {tanoshiParagraphModel.getClasses()} {$$props.class}"
-	style="{$$props.style};"
->
+<p class=" {tanoshiParagraphModel.getClasses()} {$$props.class}" style="{$$props.style};">
 	<slot />
 </p>
 

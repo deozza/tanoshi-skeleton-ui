@@ -1,5 +1,7 @@
 <script lang="ts">
 	import {
+		BUTTON_BACKGROUND_THEMES,
+		BUTTON_HOVER_BACKGROUND_THEMES,
 		DIRECTIONS,
 		JUSTIFY_CONTENTS,
 		THEMES,
@@ -11,8 +13,9 @@
 	import TanoshiContainer from '$lib/molecules/TanoshiContainer.svelte';
 
 	const tanoshiButtonModel: TanoshiButtonModel = new TanoshiButtonModel()
-		.setBackgroundTheme(THEMES.Black)
-		.setIsDisabled(true);
+		.setBackgroundTheme(BUTTON_BACKGROUND_THEMES.Black)
+		.setHoverBackgroundTheme(BUTTON_HOVER_BACKGROUND_THEMES.Danger)
+		.setIsDisabled(false);
 
 	const tanoshiRowContainerModel: TanoshiContainerModel = new TanoshiContainerModel(
 		DIRECTIONS.Row,

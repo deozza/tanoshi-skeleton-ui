@@ -107,66 +107,66 @@
 	text-align: justify;
 }
 
-.text-black {
+.text-theme-black {
 	color: rgba(var(--black));
 }
 
-.text-hover-black:not(.disabled):not(:disabled):hover {
+.hover.text-theme-black:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-black));
 }
 
-.text-white {
+.text-theme-white {
 	color: rgba(var(--white));
 }
 
-.text-hover-white:not(.disabled):not(:disabled):hover {
+.hover.text-theme-white:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-white));
 }
 
-.text-primary {
+.text-theme-primary {
 	color: rgba(var(--primary));
 }
 
-.text-hover-primary:not(.disabled):not(:disabled):hover {
+.hover.text-theme-primary:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-primary));
 }
 
-.text-secondary {
+.text-theme-secondary {
 	color: rgba(var(--secondary));
 }
 
-.text-hover-secondary:not(.disabled):not(:disabled):hover {
+.hover.text-theme-secondary:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-secondary));
 }
 
-.text-success {
+.text-theme-success {
 	color: rgba(var(--success));
 }
 
-.text-hover-success:not(.disabled):not(:disabled):hover {
+.hover.text-theme-success:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-success));
 }
 
-.text-danger {
+.text-theme-danger {
 	color: rgba(var(--danger));
 }
 
-.text-hover-danger:not(.disabled):not(:disabled):hover {
+.hover.text-theme-danger:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-danger));
 }
 
-.text-warning {
+.text-theme-warning {
 	color: rgba(var(--warning));
 }
 
-.text-hover-warning:not(.disabled):not(:disabled):hover {
+.hover.text-theme-warning:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-warning));
 }
 
-.text-info {
+.text-theme-info {
 	color: rgba(var(--info));
 }
 
-.text-hover-info:not(.disabled):not(:disabled):hover {
+.hover.text-theme-info:not(.disabled):not(:disabled):hover {
 	color: rgba(var(--hover-info));
 }

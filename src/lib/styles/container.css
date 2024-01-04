@@ -1,71 +1,135 @@
-.background-transparent {
+.bg-theme-transparent {
 	background-color: transparent;
 }
 
-.border-transparent {
+.bd-theme-transparent {
 	border-color: transparent;
 }
 
-.background-black {
+.bg-theme-black {
 	background-color: rgba(var(--black));
 }
 
-.border-black {
+.hover-bg-theme-black:hover:not([disabled]) {
+	background-color: rgba(var(--black));
+}
+
+.bd-theme-black {
 	border-color: rgba(var(--black));
 }
 
-.background-white {
+.hover-bd-theme-black:hover:not([disabled]) {
+	border-color: rgba(var(--black));
+}
+
+.bg-theme-white {
 	background-color: rgba(var(--white));
 }
 
-.border-white {
+.hover-bg-theme-white:hover:not([disabled]) {
+	background-color: rgba(var(--white));
+}
+
+.bd-theme-white {
 	border-color: rgba(var(--white));
 }
 
-.background-primary {
+.hover-bd-theme-white:hover:not([disabled]) {
+	border-color: rgba(var(--white));
+}
+
+.bg-theme-primary {
 	background-color: rgba(var(--primary));
 }
 
-.border-primary {
+.hover-bg-theme-primary:hover:not([disabled]) {
+	background-color: rgba(var(--primary));
+}
+
+.bd-theme-primary {
 	border-color: rgba(var(--primary));
 }
 
-.background-secondary {
+.hover-bd-theme-primary:hover:not([disabled]) {
+	border-color: rgba(var(--primary));
+}
+
+.bg-theme-secondary {
 	background-color: rgba(var(--secondary));
 }
 
-.border-secondary {
+.hover-bg-theme-secondary:hover:not([disabled]) {
+	background-color: rgba(var(--secondary));
+}
+
+.bd-theme-secondary {
 	border-color: rgba(var(--secondary));
 }
 
-.background-success {
+.hover-bd-theme-secondary:hover:not([disabled]) {
+	border-color: rgba(var(--secondary));
+}
+
+.bg-theme-success {
 	background-color: rgba(var(--success));
 }
 
-.border-success {
+.hover-bg-theme-success:hover:not([disabled]) {
+	background-color: rgba(var(--success));
+}
+
+.bd-theme-success {
 	border-color: rgba(var(--success));
 }
 
-.background-danger {
+.hover-bd-theme-success:hover:not([disabled]) {
+	border-color: rgba(var(--success));
+}
+
+.bg-theme-danger {
 	background-color: rgba(var(--danger));
 }
 
-.border-danger {
+.hover-bg-theme-danger:hover:not([disabled]) {
+	background-color: rgba(var(--danger));
+}
+
+.bd-theme-danger {
 	border-color: rgba(var(--danger));
 }
 
-.background-warning {
+.hover-bd-theme-danger:hover:not([disabled]) {
+	border-color: rgba(var(--danger));
+}
+
+.bg-theme-warning {
 	background-color: rgba(var(--warning));
 }
 
-.border-warning {
+.hover-bg-theme-warning:hover:not([disabled]) {
+	background-color: rgba(var(--warning));
+}
+
+.bd-theme-warning {
 	border-color: rgba(var(--warning));
 }
 
-.background-info {
+.hover-bd-theme-warning:hover:not([disabled]) {
+	border-color: rgba(var(--warning));
+}
+
+.bg-theme-info {
 	background-color: rgba(var(--info));
 }
 
-.border-info {
+.hover-bg-theme-info:hover:not([disabled]) {
+	background-color: rgba(var(--info));
+}
+
+.bd-theme-info {
+	border-color: rgba(var(--info));
+}
+
+.hover-bd-theme-info:hover:not([disabled]) {
 	border-color: rgba(var(--info));
 }

@@ -1,5 +1,7 @@
 :root {
 	--paragraph-primary: 107, 114, 128;
+	--button-background-black: 255, 255, 255;
+	--button-hover-background-danger: 100, 50, 255;
 
 	--primary-light: 98, 156, 248;
 	--primary: 59, 130, 246;

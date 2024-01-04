@@ -7,10 +7,7 @@
 	export let tanoshiPillModel: TanoshiPillModel;
 </script>
 
-<span
-	class="{tanoshiPillModel.getClasses()} {$$props.class}"
-	style="{$$props.style};"
->
+<span class="{tanoshiPillModel.getClasses()} {$$props.class}" style="{$$props.style};">
 	<slot />
 </span>
 
