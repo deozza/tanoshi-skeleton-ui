@@ -8,17 +8,16 @@
 		THEMES,
 		TanoshiButtonModel,
 		TanoshiContainerModel,
-
 		TanoshiParagraphModel
-
 	} from 'tanoshi-models';
 	import '../app.css';
 	import TanoshiButton from '$lib/atoms/TanoshiButton.svelte';
 	import TanoshiContainer from '$lib/molecules/TanoshiContainer.svelte';
 	import TanoshiParagraph from '$lib/atoms/TanoshiParagraph.svelte';
 
-	const tanoshiParagraphModel: TanoshiParagraphModel = new TanoshiParagraphModel()
-		.setTextTheme(PARAGRAPH_TEXT_THEMES.Primary)
+	const tanoshiParagraphModel: TanoshiParagraphModel = new TanoshiParagraphModel().setTextTheme(
+		PARAGRAPH_TEXT_THEMES.Primary
+	);
 
 	const tanoshiRowContainerModel: TanoshiContainerModel = new TanoshiContainerModel(
 		DIRECTIONS.Row,
