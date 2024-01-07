@@ -7,10 +7,7 @@
 	export let tanoshiContainerModel: TanoshiContainerModel;
 </script>
 
-<div
-	class="{tanoshiContainerModel.getClasses()} {$$props.class}"
-	style="{$$props.style};"
->
+<div class="{tanoshiContainerModel.getClasses()} {$$props.class}" style="{$$props.style};">
 	<slot />
 </div>
 
